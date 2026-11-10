@@ -1,0 +1,15 @@
+{
+  "city_name": "Your City",
+  "id_prefix": "CITY",
+  "dataset_name": "Your vector source, release date, and spatial extent",
+  "target_crs": "EPSG:32633",
+  "output_dir": "../outputs/your_city",
+  "seed": 20260819,
+  "inputs": {
+    "pois": {"path": "../local_data/city.gpkg", "layer": "pois", "id_field": "source_id", "attribute_fields": []},
+    "roads": {"path": "../local_data/city.gpkg", "layer": "roads", "id_field": "source_id", "attribute_fields": [], "field_map": {"layer": "osm_layer", "bridge": "bridge", "tunnel": "tunnel"}},
+    "buildings": {"path": "../local_data/city.gpkg", "layer": "buildings", "id_field": "source_id", "attribute_fields": []},
+    "landuse": {"path": "../local_data/city.gpkg", "layer": "landuse", "id_field": "source_id", "attribute_fields": []}
+  },
+  "filters": {"road_length_m": [30, 1200], "building_area_m2": [50, 30000], "landuse_area_m2": [20000, 3000000]}
+}

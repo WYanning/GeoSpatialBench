@@ -1,0 +1,93 @@
+{
+  "city": "Stockholm",
+  "source": "Geofabrik Sweden OSM release 2026-07-20",
+  "source_crs": "EPSG:4326",
+  "sample_crs": "EPSG:3006",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL-1.0",
+  "license_url": "https://www.openstreetmap.org/copyright",
+  "sample_type": "role-aware subset of observed source vectors; geometry not simplified or clipped",
+  "selection": {
+    "pois": 1800,
+    "roads": 2400,
+    "buildings": 1400,
+    "landuse": 60,
+    "selection_seeds": [
+      261012,
+      261013,
+      261014
+    ],
+    "density_region_minimum_full_pool_pois": 8,
+    "preserved_unequal_layer_road_pairs": 120,
+    "excluded_closed_roads": 448
+  },
+  "layers": {
+    "landuse": {
+      "features": 60,
+      "geometry_types": {
+        "Polygon": 60
+      },
+      "bounds_epsg3006": [
+        668303.8181319729,
+        6576522.004732863,
+        676775.0260902414,
+        6585434.28705093
+      ],
+      "source_id_unique": true
+    },
+    "pois": {
+      "features": 1800,
+      "geometry_types": {
+        "Point": 1800
+      },
+      "bounds_epsg3006": [
+        667707.3211255549,
+        6576162.235849924,
+        677656.2933578617,
+        6585255.421292629
+      ],
+      "source_id_unique": true
+    },
+    "roads": {
+      "features": 2400,
+      "geometry_types": {
+        "LineString": 2400
+      },
+      "bounds_epsg3006": [
+        667327.6830495993,
+        6575998.497525527,
+        677873.8108749089,
+        6585458.096378816
+      ],
+      "source_id_unique": true,
+      "nonzero_layer_features": 213
+    },
+    "buildings": {
+      "features": 1400,
+      "geometry_types": {
+        "Polygon": 1400
+      },
+      "bounds_epsg3006": [
+        667622.2522638636,
+        6576052.1546151815,
+        677509.7224277677,
+        6585198.4613826
+      ],
+      "source_id_unique": true
+    }
+  },
+  "file": "stockholm_sample.gpkg",
+  "bytes": 1675264,
+  "sha256": "f37f2e5f80bc875e83f05b5b23c56aff98f61c7edd97afc9afcd509082d36c68",
+  "source_files": [
+    {
+      "file": "benchmark final/04_prepared_sources/stockholm/real_osm_roles.gpkg",
+      "sha256": "fc3302576cdefb905f1d1f50f59c58f39e0edbb3b2c7296547897050dd23922d"
+    },
+    {
+      "file": "benchmark final/04_prepared_sources/stockholm/roads_clean.gpkg",
+      "sha256": "cbb13d6421cdca23ec4f423c8dbd65251ac30cee1f5ee2fbc13341603c289b03"
+    }
+  ],
+  "note": "This is a small source dataset for a new benchmark build; it does not reconstruct the frozen historical Stockholm sample."
+}

@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "Please cite the GeoSpatialBench paper when using this code or benchmark."
+type: software
+title: "GeoSpatialBench: portable city benchmark release"
+version: 1.2.0
+date-released: 2026-10-14
+license: MIT
+authors:
+  - family-names: Ren
+    given-names: Zheng
+  - family-names: Wang
+    given-names: Yanning
+  - family-names: Huang
+    given-names: Ziheng
+  - family-names: Huang
+    given-names: Fei
+  - family-names: Wang
+    given-names: Shiqi
+  - family-names: Ye
+    given-names: Ziqian
+  - family-names: Yue
+    given-names: Yang
+preferred-citation:
+  type: article
+  title: "Mind the Spatial Gap: A Benchmark for Geospatial Reasoning and Constrained Spatial Editing"
+  authors:
+    - family-names: Ren
+      given-names: Zheng
+    - family-names: Wang
+      given-names: Yanning
+    - family-names: Huang
+      given-names: Ziheng
+    - family-names: Huang
+      given-names: Fei
+    - family-names: Wang
+      given-names: Shiqi
+    - family-names: Ye
+      given-names: Ziqian
+    - family-names: Yue
+      given-names: Yang
+  year: 2026
+  journal: arXiv
+  url: "https://arxiv.org/abs/2610.12881"
+  identifiers:
+    - type: other
+      value: "arXiv:2610.12881"

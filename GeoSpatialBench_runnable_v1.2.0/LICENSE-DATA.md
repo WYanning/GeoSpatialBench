@@ -1,0 +1,11 @@
+# Geographic data terms and attribution
+
+The Stockholm benchmark database in `examples/stockholm/` contains geometry derived from **© OpenStreetMap contributors**, originally extracted from the Geofabrik Sweden OSM release dated 2026-07-20. The prepared QA clip covers approximately longitude 17.95–18.12 and latitude 59.29–59.37; scene constructions and the editing pool can differ from the raw clip. Source IDs and derivations remain in the canonical records for auditing.
+
+OpenStreetMap data and this OSM-derived benchmark database are made available under the **Open Data Commons Open Database License (ODbL) 1.0**. The software MIT license does not replace the source database terms. Full license text: [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/). Source attribution and license information: [OpenStreetMap copyright](https://www.openstreetmap.org/copyright). Dataset provider: [Geofabrik Sweden](https://download.geofabrik.de/europe/sweden.html).
+
+The bundled `examples/stockholm/vector/stockholm_sample.gpkg` is a role-aware subset from those observed source vectors, projected to EPSG:3006. It retains 1,800 POIs, 2,400 roads, 1,400 buildings and 60 regions; geometries are not simplified or shape-clipped. Closed roads are excluded because the generator's first-to-last directional probes require distinct endpoints. Source identities, selection seeds, actual bounds and hashes are recorded in its `data_manifest.json`. This source example is also distributed under ODbL 1.0.
+
+Keep the OpenStreetMap attribution with redistributed database extracts and rendered products. The offline renderer writes attribution on its maps. Original model outputs are included solely as the research example alongside their source provenance; newly calculated result tables and authored documentation fall under the repository's software/documentation license without removing source database obligations.
+
+For a new city, record the vector source, extraction/release date, spatial extent and source license in `dataset_name` and your release documentation. Official city data and private GIS files may have different terms; this repository does not grant rights to those sources. Reference answers are public to support reproducible scoring, while the runner sends only the corresponding model inputs.

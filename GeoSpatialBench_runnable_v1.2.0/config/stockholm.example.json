@@ -1,0 +1,53 @@
+{
+  "city_name": "Stockholm",
+  "id_prefix": "STODEMO",
+  "dataset_name": "Stockholm compact vector sample from Geofabrik Sweden OSM 2026-07-20; 1,800 POIs + 2,400 roads + 1,400 buildings + 60 regions; EPSG:3006",
+  "target_crs": "EPSG:3006",
+  "output_dir": "../outputs/stockholm_new_build",
+  "seed": 20260819,
+  "inputs": {
+    "pois": {
+      "path": "../examples/stockholm/vector/stockholm_sample.gpkg",
+      "layer": "pois",
+      "id_field": "source_id",
+      "attribute_fields": []
+    },
+    "roads": {
+      "path": "../examples/stockholm/vector/stockholm_sample.gpkg",
+      "layer": "roads",
+      "id_field": "source_id",
+      "attribute_fields": [],
+      "field_map": {
+        "layer": "osm_layer",
+        "bridge": "bridge",
+        "tunnel": "tunnel"
+      }
+    },
+    "buildings": {
+      "path": "../examples/stockholm/vector/stockholm_sample.gpkg",
+      "layer": "buildings",
+      "id_field": "source_id",
+      "attribute_fields": []
+    },
+    "landuse": {
+      "path": "../examples/stockholm/vector/stockholm_sample.gpkg",
+      "layer": "landuse",
+      "id_field": "source_id",
+      "attribute_fields": []
+    }
+  },
+  "filters": {
+    "road_length_m": [
+      30,
+      1200
+    ],
+    "building_area_m2": [
+      50,
+      30000
+    ],
+    "landuse_area_m2": [
+      20000,
+      3000000
+    ]
+  }
+}
